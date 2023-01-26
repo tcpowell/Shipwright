@@ -448,8 +448,3 @@ _deps
 */extract_assets_cmake*
 /build*
 build.c
-
-# ootfest exclusions
-!/x64/Release/shipofharkinian.json
-!/x64/Release/file1.sav
-!/x64/Release/global.sav
