@@ -1,6 +1,3 @@
 [submodule "libultraship"]
 	path = libultraship
 	url = https://github.com/kenix3/libultraship.git
-[submodule "ootfestConfig"]
-	path = ootfestConfig
-	url = https://github.com/tcpowell/soh-config.git
