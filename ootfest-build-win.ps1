@@ -10,9 +10,8 @@
 # Compile project
 & 'C:\Program Files\CMake\bin\cmake.exe' --build .\build\x64 --config Release
 
-# Copy OTR file
-Copy-Item "OTRExporter\oot.otr" -Destination "x64\Release\oot.otr" -Force
-
-# Now you can run the executable in .\build\x64
+# Copy Files to ootfest config directory
+Copy-Item "OTRExporter\oot.otr" -Destination "ootfestConfig\oot.otr" -Force
+Copy-Item "x64\Release\soh.exe" -Destination "ootfestConfig\soh.exe" -Force
 
 Pause
