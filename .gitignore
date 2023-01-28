@@ -422,7 +422,6 @@ imgui.ini
 *.nacp
 ZAPDTR/ZAPDUtils/lib/*
 !/soh/icon.jpg
-!/soh/sohIcon.png
 
 # Xcode
 xcuserdata/
