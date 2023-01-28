@@ -5,6 +5,11 @@ if [ ! -f ZELOOTD.z64 ]; then
 	exit 1
 fi
 
+if [ ! -f ../ootfest/shipofharkinian.json ]; then
+    echo "Could not find soh-config repository (should be cloned to ~/git/ootfest)"
+	exit 1
+fi
+
 set -x
 
 # Copy ROM to directory
@@ -31,5 +36,10 @@ cd build-cmake
 # Generate
 cpack -G External
 
+cd ..
+
 # Move the appimage back to root
-mv build-cmake/*.appimage soh.appimage
+mv build-cmake/*.appimage ../ootfest/soh.appimage
+
+# Cleanup
+rm -rf _packages/

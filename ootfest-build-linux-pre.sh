@@ -25,3 +25,7 @@ cd SDL2_net-2.2.0
 make -j 10
 sudo make install
 sudo cp -av /usr/local/lib/libSDL* /lib/x86_64-linux-gnu/
+
+# Cleanup temporary files
+rm -rf SDL2-2.26.1/
+rm -f SDL2-2.26.1.tar.gz
