@@ -1,12 +1,14 @@
 #!/bin/bash
 
+read -p "Have you updated the ootfest repository (should be cloned to ~/git/ootfest)? Press any key to continue."
+
 if [ ! -f ZELOOTD.z64 ]; then
     echo "Please place rom file ZELOOTD.z64 in this directory and try again"
 	exit 1
 fi
 
 if [ ! -f ../ootfest/shipofharkinian.json ]; then
-    echo "Could not find soh-config repository (should be cloned to ~/git/ootfest)"
+    echo "Could not find ootfest repository (should be cloned to ~/git/ootfest)"
 	exit 1
 fi
 
@@ -43,3 +45,8 @@ mv build-cmake/*.appimage ../ootfest/soh.appimage
 
 # Cleanup
 rm -rf _packages/
+
+# Copy OTR (for local testing)
+cp oot.otr ../ootfest/oot.otr
+
+# Manually copy soh.appimage over to be committed

@@ -22,7 +22,7 @@ pause
 GOTO :EOF
 
 :no_ootfest
-echo Could not find soh-config repository (should be cloned to ~/git/ootfest)
+echo Could not find ootfest repository (should be cloned to ~/git/ootfest)
 echo.
 pause
 GOTO :EOF
